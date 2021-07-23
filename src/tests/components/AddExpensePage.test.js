@@ -1,7 +1,7 @@
-import React from "react";
+import React from 'react';
 import {shallow} from 'enzyme';
-import { AddExpensePage } from "../../components/AddExpensePage";
-import expenses from "../fixtures/expenses";
+import { AddExpensePage } from '../../components/AddExpensePage';
+import expenses from '../fixtures/expenses';
 
 let startAddExpense, history, wrapper;
 
@@ -20,8 +20,3 @@ test('should handle onSubmit', ()=> {
     expect(history.push).toHaveBeenLastCalledWith('/');
     expect(startAddExpense).toHaveBeenLastCalledWith(expenses[1]);
 });
-
-//
-// test('', ()=> {
-//
-// });
